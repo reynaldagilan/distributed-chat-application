@@ -1,0 +1,22 @@
+{
+  "name": "distributed-chat-application",
+  "version": "1.0.0",
+  "description": "A modern distributed chat application with asynchronous communication",
+  "main": "main.js",
+  "scripts": {
+    "start": "open index.html",
+    "dev": "python -m http.server 8000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "chat",
+    "distributed",
+    "asynchronous",
+    "real-time",
+    "messaging"
+  ],
+  "author": "reynaldagilan",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {}
+}
