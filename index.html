@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distributed Chat Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="user-profile">
+                <div class="user-avatar">U</div>
+                <div class="user-info">
+                    <p class="username" id="username">Guest</p>
+                    <button class="btn-logout" id="logoutBtn">Logout</button>
+                </div>
+            </div>
+            <div class="rooms-section">
+                <h2>Rooms</h2>
+                <input type="text" id="roomSearch" placeholder="Search or create room..." class="search-input">
+                <ul class="room-list" id="roomList"></ul>
+                <button class="btn-new-room" id="createRoomBtn">+ New Room</button>
+            </div>
+        </aside>
+        
+        <main class="chat-section">
+            <div class="chat-header">
+                <h1 id="currentRoom">Select a Room</h1>
+                <div class="chat-actions">
+                    <button class="btn-info">Info</button>
+                    <button class="btn-settings">Settings</button>
+                </div>
+            </div>
+            
+            <div class="messages-container" id="messagesContainer">
+                <div class="welcome-message">
+                    <h2>Welcome to Distributed Chat</h2>
+                    <p>Select a room to start messaging</p>
+                </div>
+            </div>
+            
+            <div class="message-input-section">
+                <textarea id="messageInput" placeholder="Type your message..." rows="3"></textarea>
+                <button class="btn-send" id="sendBtn">Send</button>
+            </div>
+        </main>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
